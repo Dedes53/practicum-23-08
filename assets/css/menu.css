@@ -163,7 +163,7 @@
     font-size: 0.95rem;
 }
 
-/* checked state */
+
 #tab-loaves:checked~.menu-tabs-layout .panel-loaves,
 #tab-sweets:checked~.menu-tabs-layout .panel-sweets,
 #tab-seasonal:checked~.menu-tabs-layout .panel-seasonal,
@@ -196,7 +196,6 @@
     line-height: 1.7;
 }
 
-/* min-width breakpoints */
 @media (min-width: 640px) {
     .menu-tabs-image-wrap {
         min-height: 420px;

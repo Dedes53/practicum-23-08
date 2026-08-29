@@ -99,7 +99,7 @@
     line-height: 1.55;
 }
 
-/* form */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@
     margin-top: 0.2rem;
 }
 
-/* tablet+ */
+
 @media (min-width: 900px) {
     .contact-layout {
         flex-direction: row;
