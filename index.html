@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Æsir Bakery - Home</title>
+    <link rel="stylesheet" href="./base.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">The Æsir Bakery</div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+            <label for="menu-toggle" class="burger" aria-label="Open or close the menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Asgard</a></li>
+                    <li><a href="./pages/about.html">Our Saga</a></li>
+                    <li><a href="./pages/menu.html">Runic Bakes</a></li>
+                    <li><a href="./pages/contact.html">Send a Raven</a></li>
+                </ul>
+            </nav>
+
+            <label for="menu-toggle" class="backdrop" aria-hidden="true"></label>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-flex">
+                <div class="hero-content">
+                    <h1 id="hero-title">Bread worthy of Valhalla</h1>
+                    <p class="hero-secondary">
+                        Forged at dawn with mortal hands and old Norse recipes—crackling crusts, cloud-soft crumb, and
+                        aromas so mighty even Thor follows the scent.
+                    </p>
+                    <a href="pages/order.html" class="btn-blue">Summon Your Basket</a>
+                </div>
+
+                <figure class="hero-image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600"
+                        alt="Fresh bakery products on display" class="responsive-img" />
+                </figure>
+            </div>
+        </section>
+
+        <section class="info-section" aria-labelledby="info-title">
+            <div class="container">
+                <h2 id="info-title" class="info-header">A few legendary reasons to visit.</h2>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <div class="card-square">
+                            <img class="card-img" src="./assets/img/image1.png" alt="">
+                        </div>
+                        <p>Ancient grains, slow fermentation, and flavor blessed by the Æsir.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-square">
+                            <img class="card-img" src="./assets/img/image2.png" alt="">
+                        </div>
+                        <p>Loaves and focaccias with a thunder-level crunch worthy of Mjölnir.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-square">
+                            <img class="card-img" src="./assets/img/image3.png" alt="">
+                        </div>
+                        <p>Daily saga specials: mead-honey buns and “Bifrost” braided bread.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-square">
+                            <img class="card-img" src="./assets/img/image4.png" alt="">
+                        </div>
+                        <p>Swift delivery by raven-post: you call, we fly, you feast.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section" aria-labelledby="quote-title">
+            <div class="container quote-wrap">
+                <h2 id="quote-title" class="sr-only">Customer testimonial</h2>
+                <figure class="quote-figure">
+                    <blockquote class="quote-text">
+                        Since tasting their rye loaf, I save my thunder for battles. Perfect crust, heroic crumb—at
+                        last, bread worthy of Asgard.
+                    </blockquote>
+                    <figcaption class="quote-author">— Thor, Son of Odin (and very hungry regular)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+        <section class="cta-wrapper" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-content">
+                        <h2 id="cta-title" class="cta-title">Hear the horn of Asgard!</h2>
+                        <p class="cta-text">
+                            Order your sacred bread now—warm, fragrant, and ready to turn any meal into a Viking
+                            feast.
+                        </p>
+                    </div>
+                    <a href="pages/order.html" class="btn-blue btn-outline-light">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="">
+            Copyright © The Æsir Bakery 2026 — Kneaded with mead, blessed by Odin.
+        </div>
+    </footer>
+</body>
+
+</html>
