@@ -1,0 +1,125 @@
+.hero {
+    background-color: var(--dark-bg);
+    color: var(--hero-main-text);
+    padding-block: clamp(4rem, 9vw, 6.5rem);
+}
+
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.hero-content {
+    flex: 1 1 380px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.hero-secondary {
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    color: var(--secondary-text);
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+    max-width: 60ch;
+}
+
+.hero-image-placeholder {
+    flex: 1 1 380px;
+    border-radius: 12px;
+    height: clamp(220px, 32vw, 300px);
+    overflow: hidden;
+    margin: 0;
+    background-color: #6b7280;
+}
+
+.info-section {
+    padding-block: clamp(3.5rem, 8vw, 5rem);
+    text-align: center;
+}
+
+.info-header {
+    font-size: clamp(1.8rem, 4vw, 2.25rem);
+    font-weight: 900;
+    color: var(--dark-bg);
+    margin-bottom: 2.5rem;
+}
+
+.info-grid {
+    display: flex;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    width: min(180px, 100%);
+}
+
+.card-square {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 4px solid var(--accent-blue);
+    border-radius: 15px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quote-section {
+    background-color: var(--secondary-text);
+    padding-block: clamp(4rem, 9vw, 6.25rem);
+}
+
+.quote-wrap {
+    max-width: 850px;
+}
+
+.quote-figure {
+    margin: 0;
+}
+
+.quote-text {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark-bg);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.quote-author {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark-bg);
+}
+
+@media (min-width: 768px) {
+    .hero-flex {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .hero-secondary {
+        margin-inline: 0;
+    }
+
+    .quote-author {
+        text-align: right;
+    }
+}
