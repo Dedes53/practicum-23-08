@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Æsir Bakery - Runic Bakes</title>
+    <meta name="description"
+        content="Explore the Runic Bakes menu: artisan loaves, sweet specials, seasonal offerings, and drinks from The Æsir Bakery.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">The Æsir Bakery</div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger" aria-label="Open or close the menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Asgard</a></li>
+                    <li><a href="about.html">Our Saga</a></li>
+                    <li><a class="active" href="menu.html" aria-current="page">Runic Bakes</a></li>
+                    <li><a href="contact.html">Send a Raven</a></li>
+                </ul>
+            </nav>
+
+            <label for="menu-toggle" class="backdrop" aria-hidden="true"></label>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="menu-hero menu-hero-centered" aria-labelledby="menu-hero-title">
+            <div class="container">
+                <p class="eyebrow">Crafted daily in the halls of flour and fire</p>
+                <h1 id="menu-hero-title">Runic Bakes Menu</h1>
+                <p class="menu-hero-intro">
+                    From battle-ready sourdough to mead-kissed sweets, every bake is prepared fresh each day in
+                    small batches.
+                </p>
+            </div>
+        </section>
+
+        <section class="menu-tabs-section" aria-labelledby="menu-tabs-title">
+            <div class="container">
+                <h2 id="menu-tabs-title" class="sr-only">Interactive menu categories</h2>
+
+                <!-- CSS-only state -->
+                <input class="menu-tab-radio" type="radio" name="menu-tab" id="tab-loaves" checked>
+                <input class="menu-tab-radio" type="radio" name="menu-tab" id="tab-sweets">
+                <input class="menu-tab-radio" type="radio" name="menu-tab" id="tab-seasonal">
+                <input class="menu-tab-radio" type="radio" name="menu-tab" id="tab-drinks">
+
+                <div class="menu-tabs-layout">
+                    <aside class="menu-tabs-aside" aria-label="Menu categories">
+                        <figure class="menu-tabs-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=1000"
+                                alt="Selection of artisan breads and pastries on a wooden table" class="responsive-img">
+
+                            <figcaption class="menu-image-overlay">
+                                <nav class="menu-tabs-nav" aria-label="Select menu category">
+                                    <label for="tab-loaves">Stone-Oven Loaves</label>
+                                    <label for="tab-sweets">Sweet Runes</label>
+                                    <label for="tab-seasonal">Seasonal Offerings</label>
+                                    <label for="tab-drinks">From the Hearth</label>
+                                </nav>
+                            </figcaption>
+                        </figure>
+                    </aside>
+
+                    <div class="menu-tabs-panels">
+                        <section class="menu-panel panel-loaves" aria-labelledby="panel-loaves-title">
+                            <h3 id="panel-loaves-title">Stone-Oven Loaves</h3>
+                            <ul class="menu-list">
+                                <li>
+                                    <strong>Valhalla Sourdough</strong> <span>$7</span>
+                                    <p>72-hour fermentation, dark crust, tender open crumb.</p>
+                                </li>
+                                <li>
+                                    <strong>Odin’s Rye</strong> <span>$8</span>
+                                    <p>Whole rye flour, toasted seeds, deep malty aroma.</p>
+                                </li>
+                                <li>
+                                    <strong>Thunder Focaccia</strong> <span>$6</span>
+                                    <p>Olive oil-rich crumb, sea salt, rosemary, crisp edge.</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="menu-panel panel-sweets" aria-labelledby="panel-sweets-title">
+                            <h3 id="panel-sweets-title">Sweet Runes</h3>
+                            <ul class="menu-list">
+                                <li>
+                                    <strong>Freyja Cinnamon Knots</strong> <span>$5</span>
+                                    <p>Soft spirals, brown sugar glaze, warm cardamom finish.</p>
+                                </li>
+                                <li>
+                                    <strong>Mead-Honey Bun</strong> <span>$5</span>
+                                    <p>Golden bun brushed with honey syrup and citrus zest.</p>
+                                </li>
+                                <li>
+                                    <strong>Bifrost Berry Tart</strong> <span>$6</span>
+                                    <p>Buttery crust, vanilla cream, and seasonal berries.</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="menu-panel panel-seasonal" aria-labelledby="panel-seasonal-title">
+                            <h3 id="panel-seasonal-title">Seasonal Offerings</h3>
+                            <ul class="menu-list">
+                                <li>
+                                    <strong>Harvest Pumpkin Loaf</strong> <span>$8</span>
+                                    <p>Spiced pumpkin dough with toasted walnut crunch.</p>
+                                </li>
+                                <li>
+                                    <strong>Yule Celebration Bread</strong> <span>$9</span>
+                                    <p>Festive braided loaf with dried fruit and orange peel.</p>
+                                </li>
+                                <li>
+                                    <strong>Midnight Sun Brioche</strong> <span>$7</span>
+                                    <p>Rich buttery dough, light crumb, delicate sweetness.</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="menu-panel panel-drinks" aria-labelledby="panel-drinks-title">
+                            <h3 id="panel-drinks-title">From the Hearth (Drinks)</h3>
+                            <ul class="menu-list">
+                                <li>
+                                    <strong>Raven Roast Coffee</strong> <span>$3</span>
+                                    <p>House blend, chocolate notes, smooth finish.</p>
+                                </li>
+                                <li>
+                                    <strong>Skadi Spiced Tea</strong> <span>$3</span>
+                                    <p>Black tea with cinnamon, clove, and orange peel.</p>
+                                </li>
+                                <li>
+                                    <strong>Nordic Berry Kefir</strong> <span>$4</span>
+                                    <p>Lightly tangy cultured drink with wild berry notes.</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-note" aria-labelledby="allergens-title">
+            <div class="container narrow">
+                <h2 id="allergens-title">Allergens & dietary note</h2>
+                <p>
+                    Our kitchen handles gluten, nuts, dairy, eggs, and sesame. If you have allergies or dietary needs,
+                    please contact us before ordering and we will guide you safely.
+                </p>
+            </div>
+        </section>
+
+        <section class="cta-wrapper" aria-labelledby="menu-cta-title">
+            <div class="container">
+                <div class="cta-banner">
+                    <div class="cta-content">
+                        <h2 id="menu-cta-title" class="cta-title">Ready to feast like a true Norse soul?</h2>
+                        <p class="cta-text">
+                            Place your order now and bring warm bread glory to your table.
+                        </p>
+                    </div>
+                    <a href="pages/order.html" class="btn-blue btn-outline-light">Summon Your Basket</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            Copyright © The Æsir Bakery 2026 — Kneaded with mead, blessed by Odin.
+        </div>
+    </footer>
+</body>
+
+</html>
