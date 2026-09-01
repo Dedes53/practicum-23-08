@@ -1,7 +1,7 @@
 .about-hero {
     background-color: var(--dark-bg);
     color: var(--hero-main-text);
-    padding-block: clamp(3.5rem, 8vw, 5.5rem);
+    padding-block: 2.2rem 2.6rem;
 }
 
 .about-hero-flex {
@@ -9,36 +9,42 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: clamp(1.5rem, 4vw, 3rem);
+    gap: 1rem;
 }
 
 .about-hero-content {
-    flex: 1 1 420px;
+    flex: 1 1 auto;
+    margin-bottom: 2rem;
 }
 
 .about-hero-content h1 {
     font-size: clamp(1.9rem, 4.8vw, 2.8rem);
     line-height: 1.1;
-    margin: 0 0 1rem;
+    margin: 0 0 0.7rem;
 }
 
 .about-hero-content p {
     color: var(--secondary-text);
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.75rem;
     max-width: 62ch;
 }
 
+.about-hero-content a {
+    margin-top: 2rem;
+}
+
 .about-hero-image {
-    flex: 1 1 360px;
+    flex: 1 1 auto;
     margin: 0;
     border-radius: 12px;
     overflow: hidden;
     background: #6b7280;
+    max-height: 280px;
 }
 
 .about-story,
 .about-team {
-    padding-block: clamp(3rem, 7vw, 4.5rem);
+    padding-block: 2rem 2.4rem;
 }
 
 .about-story h2,
@@ -56,11 +62,12 @@
 
 .about-values {
     background: #f8fafc;
-    padding-block: clamp(3.2rem, 7vw, 4.8rem);
+    padding-block: 2.2rem 2.6rem;
 }
 
-.values-grid {
+.values-flex {
     display: flex;
+    flex-direction: column;
     gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
@@ -96,18 +103,41 @@
 }
 
 @media (min-width: 768px) {
+    .about-hero {
+        padding-block: clamp(3.5rem, 8vw, 5.5rem);
+    }
+
     .about-hero-flex {
         flex-direction: row;
         text-align: left;
+        gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .about-hero-content {
+        flex: 1 1 420px;
     }
 
     .about-hero-content p {
         margin-inline: 0;
     }
-}
 
-@media (min-width: 900px) {
-    .values-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    .about-hero-image {
+        flex: 1 1 360px;
+        max-height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-story,
+    .about-team {
+        padding-block: clamp(3rem, 7vw, 4.5rem);
+    }
+
+    .about-values {
+        padding-block: clamp(3.2rem, 7vw, 4.8rem);
+    }
+
+    .values-flex {
+        flex-direction: row;
     }
 }
