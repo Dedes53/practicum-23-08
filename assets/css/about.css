@@ -61,8 +61,7 @@
 }
 
 .values-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
