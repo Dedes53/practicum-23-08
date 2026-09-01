@@ -33,7 +33,6 @@
     margin: 0;
     border-radius: 12px;
     overflow: hidden;
-    min-height: clamp(240px, 34vw, 360px);
     background: #6b7280;
 }
 
